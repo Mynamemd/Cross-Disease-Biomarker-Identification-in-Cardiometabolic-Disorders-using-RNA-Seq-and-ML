@@ -1,0 +1,4 @@
+*.fastq
+*.bam
+gene_counts_*.txt
+.Rhistory
