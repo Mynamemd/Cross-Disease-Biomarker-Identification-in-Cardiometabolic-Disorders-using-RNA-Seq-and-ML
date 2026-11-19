@@ -13,7 +13,7 @@ print("Vst counts Matrix Shape:", counts_df.shape)
 print("DESeq2 Matrix Shape:", deseq_df.shape)
 
 # 2. Filter Top diffrentially expressed genes (DEGs)
-deg_mask = (deseq_df['padj'] < 0.07) & (deseq_df['log2FoldChange'].abs() >= 1.0)
+deg_mask = (deseq_df['padj'] < 0.05) & (deseq_df['log2FoldChange'].abs() >= 1.0)
 top_genes = deseq_df[deg_mask].index.tolist()
 
 print(f"[+] Total raw genes: {counts_df.shape[0]}")
