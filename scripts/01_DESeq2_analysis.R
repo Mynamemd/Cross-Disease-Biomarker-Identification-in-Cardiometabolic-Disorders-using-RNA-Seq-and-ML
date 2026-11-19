@@ -57,7 +57,7 @@ res_df$symbol <- mapIds(org.Hs.eg.db,
                         keytype = "ENSEMBL",
                         multiVals = "first")
 
-PADJ_CUTOFF <- 0.07
+PADJ_CUTOFF <- 0.05
 LFC_CUTOFF <- 1.0
 
 write.csv(res_df, "DESeq2_full_results.csv")
